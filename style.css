@@ -1,71 +1,169 @@
-/*header color and style*/
-header h1 {
-	font-family: Verdana;
-	font-size: 40px;
-	margin: 50px;
-  text-align: center;
-}
-header h1 a  {
-	color: #2d5885c4;
-}
-header h1 a:hover {
-	color: rgb(14, 190, 73);
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-
-/*color for intro and about me titles*/
-h2{
-  color:aqua;
+/* -------  Structure ------- */
+header {
+	height: 140px;
+	background-color: #403933;
+	background-image:url(images/jpg);
 }
-
-
-/*footer link colors*/
-h3 a {
-  color: yellow;
-}
-h3 a:hover{
-  color: purple;
-}
-
-
-/*  body & rest  */
 
 body {
-	background-color: rgb(223, 24, 24)
-}
-div{
-  border: 30px solid #000;
-  background-color: rgba(180, 177, 162, 0.829);
-}
-img {
-	width: 450px;
-  height: 615px;
-  margin-left: 420px;
+	/*background-image:url(images/BackgroundSplots.jpg);*/
+  background: linear-gradient(to right, whitesmoke, #d5d5d5); 
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-
-/*container styles*/
-.textContainer {
-  width: 300px;
-  margin: 20px auto 0 auto;
-  text-align: center;
-  padding-top: 15px;
-}
-.pageContainer {
-  width: 940px auto 0 auto;
-  margin: 20px auto 0 auto;
-  padding-top: 20px;
-  background-color: rgba(180, 177, 162, 0.829);
-}
-.imageContainer {
-  padding-top: 15px;
-}
-
-
-/*footer styles*/
 footer {
-    background-color:rgba(180, 177, 162, 0.829);
-    margin: 200px 0 0 0;
-    padding: 20px 0;
-    border: 10px solid #000;
+	height: 84px;
+	background-color: #403933;
+	background-image:url(images/subt);
 }
+
+.wrapper {
+	width: 580px;
+	margin: auto;	
+}
+
+img {
+  /*padding-top: 50px;*/
+ width: 100%;	
+}
+
+
+/* -------  Logo ------- */
+
+header h1 {
+	font-family: 'Noto Sans JP', sans-serif;
+  color: #bb9943;
+	margin: 0px;
+	padding-top: 20px;
+	font-size: 52px;
+	text-align:center;
+  text-shadow: 1px 2px whitesmoke; 
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* -------  Type ------- */
+
+h1, h2 {
+	color: #058085;
+	font-family: 'Noto Serif', serif;
+}
+
+h1 { font-size: 38px;}
+h2 { font-size: 30px;}
+
+p, li {
+	font-family: 'Noto Sans', sans-serif;
+	color: #b17806;
+	font-size: 20px;
+	font-weight: 400;
+    line-height: 26px;
+}
+
+
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+a:link { color: #38786a; }
+a:visited { color: #38786a; }
+a:hover { text-decoration: underline;	translate: ease in 3s; color:whitesmoke; }
+a:active { color: #403933; }
+
+
+
+footer p {
+	color: #fff;	
+	text-align: center;
+}
+
+img
+{
+  box-shadow: 7px 10px #bdbdbd;  /*first value left/right second value: top/bottom color*/
+}
+
+/* Form fields */
+.formField
+{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button
+{
+  border-radius: 5px;
+  height: 25px;
+  width: 200px;
+  font-size: 18px;
+  background: whitesmoke;
+
+}
+
+
+
+/* -------  Elements ------- */
+
+hr { border: .5px solid #403933;}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+
